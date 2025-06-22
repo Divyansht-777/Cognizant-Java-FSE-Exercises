@@ -52,7 +52,7 @@ public class ProductSearch {
             new Product(5, "Chair", "Furniture")
         };
 
-        System.out.println("🔍 Linear Search:");
+        System.out.println("Linear Search:");
         Product result1 = linearSearch(products, "Phone");
         if (result1 != null) {
             System.out.println("Found: " + result1.productName + " in " + result1.category);
@@ -62,7 +62,7 @@ public class ProductSearch {
 
         Arrays.sort(products, Comparator.comparing(p -> p.productName.toLowerCase()));
 
-        System.out.println("\n🔍 Binary Search (after sorting):");
+        System.out.println("\nBinary Search (after sorting):");
         Product result2 = binarySearch(products, "Phone");
         if (result2 != null) {
             System.out.println("Found: " + result2.productName + " in " + result2.category);
